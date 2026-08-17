@@ -14,7 +14,9 @@ ACCENT = "#22c7d6"
 AMBER = "#f2b84b"
 RED = "#ff5a67"
 GREEN = "#48c78e"
-GRID = "rgba(174,184,197,0.14)"
+GRID = "rgba(174,184,197,0.12)"
+FONT_SANS = "IBM Plex Sans, Segoe UI Variable, Segoe UI, system-ui, sans-serif"
+FONT_MONO = "IBM Plex Mono, Cascadia Mono, Consolas, monospace"
 
 
 def apply_style() -> None:

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from orthoxrd.ui_style import ACCENT, BORDER, CANVAS, GRID, MUTED, SURFACE, TEXT
+from orthoxrd.ui_style import ACCENT, BORDER, CANVAS, FONT_SANS, GRID, MUTED, SURFACE, TEXT
 
 SERIES = (
     "#22c7d6",
@@ -36,17 +36,21 @@ def plot_layout(
         "linecolor": BORDER,
         "zeroline": False,
         "ticks": "outside",
-        "tickfont": {"color": MUTED},
-        "title": {"font": {"color": TEXT}},
+        "tickfont": {"color": MUTED, "size": 11, "family": FONT_SANS},
+        "title": {"font": {"color": TEXT, "size": 12, "family": FONT_SANS}},
         "automargin": True,
     }
     return {
         "height": height,
-        "margin": {"l": 58, "r": 24, "t": 28, "b": 54},
+        "margin": {"l": 56, "r": 20, "t": 24, "b": 50},
         "paper_bgcolor": CANVAS,
         "plot_bgcolor": SURFACE,
-        "font": {"color": TEXT, "size": 12},
-        "hoverlabel": {"bgcolor": SURFACE, "bordercolor": BORDER, "font_color": TEXT},
+        "font": {"color": TEXT, "size": 12, "family": FONT_SANS},
+        "hoverlabel": {
+            "bgcolor": SURFACE,
+            "bordercolor": BORDER,
+            "font": {"color": TEXT, "family": FONT_SANS, "size": 12},
+        },
         "xaxis": {**axis, "title": x_title},
         "yaxis": {**axis, "title": y_title},
         "showlegend": show_legend,
@@ -63,9 +67,12 @@ def plot_layout(
 
 __all__ = [
     "ACCENT",
+    "BORDER",
+    "CANVAS",
     "HEATMAP_SCALE",
     "MUTED",
     "SERIES",
+    "SURFACE",
     "TEXT",
     "plot_layout",
 ]

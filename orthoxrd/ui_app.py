@@ -82,12 +82,15 @@ def _render_title_and_advanced():
     with title_col:
         st.markdown(
             f"""
-<div class="xrd-titlebar">
-  <h1>{t("app.page_title")}</h1>
-  <span class="xrd-model-tag">{t("app.model_tag")}</span>
-</div>
-<div class="xrd-subtitle">
-  {t("app.subtitle")}
+<div class="xrd-mast">
+  <div class="xrd-mark" aria-hidden="true">CS</div>
+  <div class="xrd-mast-copy">
+    <div class="xrd-titlebar">
+      <h1>{t("app.page_title")}</h1>
+      <span class="xrd-model-tag">{t("app.model_tag")}</span>
+    </div>
+    <div class="xrd-subtitle">{t("app.subtitle")}</div>
+  </div>
 </div>
 """,
             unsafe_allow_html=True,
