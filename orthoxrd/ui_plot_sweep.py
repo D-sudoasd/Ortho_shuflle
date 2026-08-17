@@ -14,7 +14,7 @@ from orthoxrd.structure_coordinates import (
     StructureAxis,
     structure_coordinate_from_y,
 )
-from orthoxrd.ui_plot_theme import HEATMAP_SCALE, SERIES, TEXT, plot_layout
+from orthoxrd.ui_plot_theme import BORDER, CANVAS, HEATMAP_SCALE, SERIES, SURFACE, TEXT, plot_layout
 from orthoxrd.ui_sweep_range import SweepDisplayRange
 
 SpectrumNormalization = Literal["model", "global", "local"]
@@ -100,14 +100,14 @@ def plot_sweep_waterfall(
     figure.update_layout(
         height=590,
         margin={"l": 0, "r": 0, "t": 20, "b": 0},
-        paper_bgcolor="#0b0f14",
+        paper_bgcolor=CANVAS,
         font={"color": TEXT},
         showlegend=False,
         scene={
-            "bgcolor": "#121821",
-            "xaxis": {"title": t("sweep.plot.two_theta"), "gridcolor": "#2a3441"},
-            "yaxis": {"title": axis_title, "gridcolor": "#2a3441"},
-            "zaxis": {"title": t("sweep.plot.intensity"), "gridcolor": "#2a3441"},
+            "bgcolor": SURFACE,
+            "xaxis": {"title": t("sweep.plot.two_theta"), "gridcolor": BORDER},
+            "yaxis": {"title": axis_title, "gridcolor": BORDER},
+            "zaxis": {"title": t("sweep.plot.intensity"), "gridcolor": BORDER},
             "camera": {"eye": {"x": 1.5, "y": -1.8, "z": 1.1}},
         },
     )

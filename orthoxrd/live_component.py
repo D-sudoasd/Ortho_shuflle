@@ -38,14 +38,15 @@ _COMPONENT_HTML: Final = """
 </div>
 """
 _COMPONENT_CSS: Final = """
-:host { display:block; color:#f3f6fa; font-family:system-ui,sans-serif; }
-.live-shell { border:1px solid #2a3441; border-radius:8px; background:#121821; padding:12px; }
+:host { display:block; color:#f3f6fa; font-family:"Segoe UI Variable","Segoe UI","IBM Plex Sans",system-ui,sans-serif; font-variant-numeric:tabular-nums; }
+.live-shell { border:1px solid #2a3441; border-radius:6px; background:#121821; padding:10px 12px 12px; }
 .live-toolbar { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:13px; }
-.live-toolbar strong { color:#22c7d6; font-family:"Cascadia Mono",Consolas,monospace; }
+.live-toolbar strong { color:#22c7d6; font-family:"Cascadia Mono","IBM Plex Mono",Consolas,monospace; letter-spacing:.02em; }
 .live-toolbar label { display:flex; align-items:center; gap:7px; color:#aeb8c5; }
-.live-toolbar select { min-height:32px; color:#f3f6fa; background:#18202b; border:1px solid #2a3441; border-radius:5px; }
+.live-toolbar select { min-height:32px; color:#f3f6fa; background:#18202b; border:1px solid #2a3441; border-radius:6px; }
+.live-toolbar select:focus-visible, input[type=range]:focus-visible { outline:2px solid #22c7d6; outline-offset:2px; }
 .live-check input { accent-color:#22c7d6; }
-canvas { display:block; width:100%; height:420px; margin-top:8px; }
+canvas { display:block; width:100%; height:420px; margin-top:8px; border-radius:4px; }
 input[type=range] { width:100%; accent-color:#22c7d6; }
 input:disabled, select:disabled { cursor:not-allowed; opacity:.45; }
 .live-legend { display:flex; gap:16px; justify-content:flex-end; color:#aeb8c5; font-size:12px; }

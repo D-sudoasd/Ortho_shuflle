@@ -39,13 +39,16 @@ This is a dense scientific analysis workbench, not a landing page. Its first vie
 
 ## Visual System
 
-- Fixed dark scientific-tool palette. Canvas `#0b0f14`, raised surface `#121821`, control surface `#18202b`, border `#2a3441`, primary text `#f3f6fa`, secondary text `#aeb8c5`.
-- Accent colors are functional: cyan `#22c7d6` for active data, amber `#f2b84b` for warnings/stale state, red `#ff5a67` for errors, green `#48c78e` for valid/export-ready state.
-- Spacing uses a 4 px base scale. Cards and controls use at most 8 px radius. No decorative gradients, blobs, hero sections, nested cards, or oversized metrics.
-- Numeric summaries and tabular values use a monospace font with tabular numerals.
-- Focus uses a visible cyan outline. Disabled controls retain readable labels. Loading, error, empty, stale, and export-ready states are explicit.
-- Plotly figures share the page palette, use restrained grid lines, and avoid white plot or paper backgrounds.
-- Tables prioritize scanability: sticky headers, compact rows, explicit units, stable IDs, and no silent truncation.
+- Fixed dark scientific-tool palette. Canvas `#0b0f14`, raised surface `#121821`, control surface `#18202b`, hover `#1c2633`, border `#2a3441`, hairline `#1e2733`, primary text `#f3f6fa`, secondary text `#aeb8c5`.
+- Accent colors are functional: cyan `#22c7d6` for active data, amber `#f2b84b` for warnings/stale state, red `#ff5a67` for errors, green `#48c78e` for valid/export-ready state. Primary actions use cyan fill on `#071014` ink.
+- Type: IBM Plex Sans for UI, IBM Plex Mono for numbers, hashes, and tabular values.
+- Compact instrument mast: 4 px cyan leading rail, CS monogram, title, model pill. Not a marketing hero.
+- Active-configuration readout is one 9-cell strip with hairline dividers; values use accent cyan and tabular mono. No stacked marketing cards, decorative gradients, or blobs.
+- Spacing uses a 4 px base scale. Cards and controls use 6 px radius (outer shells 8 px).
+- Segmented view switcher is a single full-width rail; the active view is solid cyan on ink.
+- Focus uses a visible 2 px cyan outline with 2 px offset. Hover darkens the control surface. Pressed buttons shift 1 px. Disabled controls retain readable labels. Loading, error, empty, stale, and export-ready states are explicit.
+- Plotly figures and the Live canvas share the page palette, use restrained grid lines, and avoid white plot or paper backgrounds.
+- Tables prioritize scanability: sticky headers, compact rows, faint even-row tint, explicit units, stable IDs, and no silent truncation.
 
 ## Responsive Contract
 
