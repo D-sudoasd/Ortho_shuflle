@@ -1,6 +1,39 @@
 <p align="center">
-  <img src="assets/readme/hero.svg" width="100%" alt="CrystalShift XRD: Cmcm 4c theoretical powder XRD workbench.">
+  <img src="assets/readme/hero.png" width="100%" alt="CrystalShift XRD — Explore how Cmcm structural parameters change powder diffraction / 探索 Cmcm 结构参数对粉末衍射的影响. Conceptual illustration / 概念插图。">
 </p>
+
+# CrystalShift XRD
+
+**Explore how Cmcm structural parameters change powder diffraction**
+
+**探索 Cmcm 结构参数对粉末衍射的影响**
+
+[Overview / 项目概览](#overview--项目概览) · [Start / 开始使用](#start--开始使用) · [Reference / 详细说明](#reference--详细说明)
+
+## Overview / 项目概览
+
+Use a theoretical powder-diffraction workbench to vary lattice parameters, the Wyckoff y coordinate, shuffle and X-ray energy. Compare peak shifts and structure-factor changes across sweeps.
+
+在理论粉末衍射工作台中改变晶格参数、Wyckoff y 坐标、原子微移与 X 射线能量，比较参数扫描中的峰位和结构因子变化。
+
+- **Structure exploration** — 围绕明确的 Cmcm 4c 坐标约定分析。
+- **Patterns and trajectories** — 检查静态谱、演化序列与参数轨迹。
+- **Traceable export** — 保存数据表、结构设置与校验信息。
+
+## Start / 开始使用
+
+```powershell
+py -3.11 -m pip install -e ".[dev]"
+py -3.11 -m streamlit run app.py --server.port 8508
+```
+
+The model explores theoretical diffraction; it does not perform Rietveld refinement or absolute-intensity calibration.
+
+本模型探索理论衍射，不执行 Rietveld 精修或绝对强度标定。
+
+*Cover: AI-generated conceptual illustration. 封面为 AI 生成的概念插图。*
+
+## Reference / 详细说明
 
 # CrystalShift XRD
 
