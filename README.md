@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/readme/hero.png" width="100%" alt="CrystalShift XRD — Explore how Cmcm structural parameters change powder diffraction / 探索 Cmcm 结构参数对粉末衍射的影响. Conceptual illustration / 概念插图。">
+</p>
+
 # CrystalShift XRD
 
 **改变 Cmcm 4c 晶格、Wyckoff 坐标和辐射条件，比较理论粉末衍射峰位与结构因子。**
@@ -8,14 +12,12 @@ A Streamlit workbench for studying how lattice parameters, Wyckoff `y`, basal sh
 
 [![MIT](https://img.shields.io/badge/License-MIT-455A64)](LICENSE) [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB)](pyproject.toml)
 
-```mermaid
-flowchart TD
-  A[晶格参数与 Cmcm 4c 坐标] --> B[设置 y、shuffle 与辐射能量]
-  B --> C[计算晶面间距和结构因子]
-  C --> D[生成理论峰表与显示谱线]
-  D --> E[比较参数扫描或演化轨迹]
-  E --> F[导出数据、结构设置与校验清单]
-```
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/readme/diagrams/workflow-readme-md-1-mobile.svg">
+  <img src="assets/readme/diagrams/workflow-readme-md-1.svg" width="100%" alt="Ortho_shuflle — workflow schematic / 流程示意图">
+</picture>
+
+<sub>[Editable diagram source / 可编辑图源](assets/readme/diagrams/workflow-readme-md-1.mmd)</sub>
 
 **从单个结构开始。** 安装后启动 `streamlit run app.py --server.port 8508`，先检查下方四个原子坐标，再一次改变一个参数。理论峰位与强度变化不等于已确定实验相变机制。
 
