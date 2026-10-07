@@ -23,6 +23,18 @@ A Streamlit workbench for studying how lattice parameters, Wyckoff `y`, basal sh
 
 包版本 `2.3.0`，导出 schema `2.4`。仓库名 `Ortho_shuflle` 保留历史拼写，Python 包仍为 `orthorhombic-xrd-simulator`。
 
+## 原理示意 / Principle schematic
+
+<p align="center">
+  <img src="assets/readme/principle.png" width="100%" alt="Cmcm 晶格几何、Wyckoff y 与理论衍射敏感性 — conceptual schematic / 概念示意图">
+</p>
+
+*概念示意：晶格参数影响反射峰位，Cmcm 4c 的 Wyckoff y 改变结构因子；原子位移与棒状谱只说明理论敏感性，不是实验结果或已确定的相变机制。*
+
+*Conceptual schematic: lattice parameters affect reflection positions, while the Cmcm 4c Wyckoff y coordinate changes structure factors. Atom displacements and stick patterns show theoretical sensitivity, not experimental results or an established transformation mechanism.*
+
+[查看完整示意图 / View full-size schematic](assets/readme/principle.png)
+
 ## Model contract
 
 ```text
